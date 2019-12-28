@@ -377,6 +377,51 @@
         </div>
       </section>
     </main>
+// loader
+<div class="preloader-background">
+<div class="preloader-wrapper big active">
+      <div class="spinner-layer spinner-blue">
+        <div class="circle-clipper left">
+          <div class="circle"></div>
+        </div><div class="gap-patch">
+          <div class="circle"></div>
+        </div><div class="circle-clipper right">
+          <div class="circle"></div>
+        </div>
+      </div>
+
+      <div class="spinner-layer spinner-red">
+        <div class="circle-clipper left">
+          <div class="circle"></div>
+        </div><div class="gap-patch">
+          <div class="circle"></div>
+        </div><div class="circle-clipper right">
+          <div class="circle"></div>
+        </div>
+      </div>
+
+      <div class="spinner-layer spinner-yellow">
+        <div class="circle-clipper left">
+          <div class="circle"></div>
+        </div><div class="gap-patch">
+          <div class="circle"></div>
+        </div><div class="circle-clipper right">
+          <div class="circle"></div>
+        </div>
+      </div>
+
+      <div class="spinner-layer spinner-green">
+        <div class="circle-clipper left">
+          <div class="circle"></div>
+        </div><div class="gap-patch">
+          <div class="circle"></div>
+        </div><div class="circle-clipper right">
+          <div class="circle"></div>
+        </div>
+      </div>
+    </div>
+  <p class="blinking">Loading</p>
+</div>
     <!-- jQuery-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <!-- Materialize - Compiled and minified JavaScript-->
@@ -393,7 +438,41 @@
           }
         );
       });
+      document.addEventListener("DOMContentLoaded", function(){
+	$('.preloader-background').delay(1700).fadeOut('slow');
+	
+	$('.preloader-wrapper')
+		.delay(2000)
+		.fadeOut();
+});
     </script>
+    <style>
+  .preloader-background {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: #eee;
+	position: fixed;
+	z-index: 999;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+  p {
+    padding-top:120px;
+    margin-left: -60px;
+    opacity: 0.8;
+  } 
+}
+
+// ADD BLINKING TEXT CLASS
+.blinking {
+	animation: blinker 0.5s linear infinite;
+}
+@keyframes blinker {  
+  50% { opacity: 0; }
+}
+    </style>
     <!-- nothing to see here...--><small>
    </small>
   </body>
