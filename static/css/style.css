@@ -226,7 +226,8 @@ a.hoverline:hover {
 }
 #skills .col img.responsive-img {
 	margin: 0 auto;
-	max-height: 100px;
+	height: 60px;
+  width: 60px;
 	padding-bottom: 10px;
 	text-align: center;
 	vertical-align: middle;
