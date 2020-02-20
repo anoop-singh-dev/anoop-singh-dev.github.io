@@ -1,394 +1,1121 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- Materialize - Compiled and minified CSS-->
+    <link
+      rel="stylesheet"
+      href="//cdnjs.cloudflare.com/ajax/libs/materialize/0.95.3/css/materialize.min.css"
+    />
+    <!-- Font Awesome Icon - CSS-->
+    <link
+      rel="stylesheet"
+      href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css"
+    />
+    <!-- Custom Styles-->
+    <link rel="stylesheet" href="static/css/style.css" />
 
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width initial-scale=1">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <!-- Materialize - Compiled and minified CSS-->
-  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/materialize/0.95.3/css/materialize.min.css">
-  <!-- Font Awesome Icon - CSS-->
-  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-  <!-- Custom Styles-->
-  <link rel="stylesheet" href="static/css/style.css">
-
-  <title>Anoop Singh | Full Stack Developer</title>
-  <!-- Open Graph-->
-  <meta property="og:locale" content="en_US">
-  <meta property="og:type" content="website">
-  <meta property="og:title" content="Anoop Singh | Full Stack Developer">
-  <meta property="og:description" content="I want to make things that make a difference.">
-  <meta property="og:url" content="anoopsingh.xyz">
-  <meta property="og:site_name" content="Anoop Singh | Full Stack Developer">
-  <meta property="article:publisher" content="anoopsingh.xyz">
-  <meta property="og:image" content="">
-  <meta name="twitter:card" content="summary">
-  <meta name="twitter:site" content="@anoopraghuvansi">
-  <meta name="twitter:title" content="Anoop Singh | Full Stack Developer">
-  <meta name="twitter:description" content="I want to make things that make a difference.">
-  <meta name="twitter:url" content="anoopsingh1996.github.io">
-  <meta name="author" content="Anoop Singh">
-  <meta name="description" content="I want to make things that make a difference.">
-  <link rel="apple-touch-icon" sizes="57x57" href="static/img/favicon/apple-icon-57x57.png">
-  <link rel="apple-touch-icon" sizes="60x60" href="static/img/favicon/apple-icon-60x60.png">
-  <link rel="apple-touch-icon" sizes="72x72" href="static/img/favicon/apple-icon-72x72.png">
-  <link rel="apple-touch-icon" sizes="76x76" href="static/img/favicon/apple-icon-76x76.png">
-  <link rel="apple-touch-icon" sizes="114x114" href="static/img/favicon/apple-icon-114x114.png">
-  <link rel="apple-touch-icon" sizes="120x120" href="static/img/favicon/apple-icon-120x120.png">
-  <link rel="apple-touch-icon" sizes="144x144" href="static/img/favicon/apple-icon-144x144.png">
-  <link rel="apple-touch-icon" sizes="152x152" href="static/img/favicon/apple-icon-152x152.png">
-  <link rel="apple-touch-icon" sizes="180x180" href="static/img/favicon/apple-icon-180x180.png">
-  <link rel="icon" type="image/png" sizes="192x192" href="static/img/favicon/android-icon-192x192.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="static/img/favicon/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="96x96" href="static/img/favicon/favicon-96x96.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="static/img/favicon/favicon-16x16.png">
-  <link rel="manifest" href="static/img/favicon/manifest.json">
-  <meta name="msapplication-TileColor" content="#ffffff">
-  <meta name="msapplication-TileImage" content="static/img/favicon/ms-icon-144x144.png">
-  <meta name="theme-color" content="#ffffff">
-  <!--if lt IE 9script(src='//html5shim.googlecode.com/svn/trunk/html5.js')
+    <title>Anoop Singh | Full Stack Developer</title>
+    <!-- Open Graph-->
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Anoop Singh | Full Stack Developer" />
+    <meta
+      property="og:description"
+      content="I want to make things that make a difference."
+    />
+    <meta property="og:url" content="anoopsingh.xyz" />
+    <meta
+      property="og:site_name"
+      content="Anoop Singh | Full Stack Developer"
+    />
+    <meta property="article:publisher" content="anoopsingh.xyz" />
+    <meta property="og:image" content="" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@anoopraghuvansi" />
+    <meta name="twitter:title" content="Anoop Singh | Full Stack Developer" />
+    <meta
+      name="twitter:description"
+      content="I want to make things that make a difference."
+    />
+    <meta name="twitter:url" content="anoopsingh1996.github.io" />
+    <meta name="author" content="Anoop Singh" />
+    <meta
+      name="description"
+      content="I want to make things that make a difference."
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="57x57"
+      href="static/img/favicon/apple-icon-57x57.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="60x60"
+      href="static/img/favicon/apple-icon-60x60.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="72x72"
+      href="static/img/favicon/apple-icon-72x72.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="76x76"
+      href="static/img/favicon/apple-icon-76x76.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="114x114"
+      href="static/img/favicon/apple-icon-114x114.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="120x120"
+      href="static/img/favicon/apple-icon-120x120.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="144x144"
+      href="static/img/favicon/apple-icon-144x144.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="152x152"
+      href="static/img/favicon/apple-icon-152x152.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="static/img/favicon/apple-icon-180x180.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="static/img/favicon/android-icon-192x192.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="static/img/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="96x96"
+      href="static/img/favicon/favicon-96x96.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="static/img/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="static/img/favicon/manifest.json" />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta
+      name="msapplication-TileImage"
+      content="static/img/favicon/ms-icon-144x144.png"
+    />
+    <meta name="theme-color" content="#ffffff" />
+    <!--if lt IE 9script(src='//html5shim.googlecode.com/svn/trunk/html5.js')
     -->
-  <meta name="robots" content="index, follow">
-  <script>
-    (function(i, s, o, g, r, a, m) {
-      i['GoogleAnalyticsObject'] = r;
-      i[r] = i[r] || function() {
-        (i[r].q = i[r].q || []).push(arguments)
-      }, i[r].l = 1 * new Date();
-      a = s.createElement(o),
-        m = s.getElementsByTagName(o)[0];
-      a.async = 1;
-      a.src = g;
-      m.parentNode.insertBefore(a, m)
-    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
-    ga('create', 'UA-39096633-2', 'auto');
-    ga('send', 'pageview');
-  </script>
-  <meta name="google-site-verification" content="-3F1R8ekDXe8XFfCi7eIVfXOSWqlp_pWNQX2dfgKD4Y">
-</head>
+    <meta name="robots" content="index, follow" />
+    <script>
+      (function(i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r;
+        (i[r] =
+          i[r] ||
+          function() {
+            (i[r].q = i[r].q || []).push(arguments);
+          }),
+          (i[r].l = 1 * new Date());
+        (a = s.createElement(o)), (m = s.getElementsByTagName(o)[0]);
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m);
+      })(
+        window,
+        document,
+        'script',
+        '//www.google-analytics.com/analytics.js',
+        'ga'
+      );
+      ga('create', 'UA-39096633-2', 'auto');
+      ga('send', 'pageview');
+    </script>
+    <meta
+      name="google-site-verification"
+      content="-3F1R8ekDXe8XFfCi7eIVfXOSWqlp_pWNQX2dfgKD4Y"
+    />
+  </head>
 
-<body>
-  <!-- Navigation Menu-->
-  <nav class="hide-on-small-only">
-    <ul class="side-nav fixed section table-of-contents">
-      <li class="logo"><a id="logo-container" aria-label="Navigate to the beginning of the page" href="#intro" class="brand-logo teal-text">
-          <h1>Anoop Singh<span class="brown-text light">Full Stack Developer</span></h1>
-        </a></li>
-      <li class="bold"><a aria-label="Navigate to the About section" href="#about" class="waves-effect waves-dark teal-text"><i class="mdi-social-person small"></i><span>About</span></a></li>
-      <li class="bold"><a aria-label="Navigate to the Experience section" href="#experience" class="waves-effect waves-dark cyan-text"><i class="mdi-action-trending-up small"></i><span>Experience</span></a></li>
-      <li class="bold"><a aria-label="Navigate to the Projects section" href="#projects" class="waves-effect waves-dark indigo-text"><i class="mdi-av-web small"></i><span>Projects</span></a></li>
-      <li class="bold"><a aria-label="Navigate to the Skills section" href="#skills" class="waves-effect waves-dark purple-text"><i class="mdi-av-equalizer small"></i><span>Skills</span></a></li>
-      <li class="bold"><a aria-label="Navigate to the Awards section" href="#awards" class="waves-effect waves-dark red-text"><i class="mdi-action-grade small"></i><span>Awards</span></a></li>
-      <li class="bold"><a aria-label="Navigate to the Education section" href="#education" class="waves-effect waves-dark orange-text"><i class="mdi-social-school small"></i><span>Education</span></a></li>
-      <li class="bold"><a aria-label="Navigate to the Contact section" href="#contact" class="waves-effect waves-dark brown-text"><i class="mdi-content-mail small"></i><span>Contact</span></a></li>
-      <li class="bold"><a aria-label="Open Anoop's blog in a new tab" href="https://medium.com/@anoopsingh" target="_blank" class="waves-effect waves-dark red-text"><i class="mdi-editor-format-bold small"></i><span>Blog</span></a></li>
-      <li class="bold"><a aria-label="Open Anoop's resume in a new tab" href="https://drive.google.com/file/d/1a8YFG2qoQknEj-npKw6-rCHrs_Xvjh_V/view?usp=sharing" target="_blank" class="waves-effect waves-dark grey-text text-darken-3"><i class="mdi-action-description small"></i><span>Resume</span></a></li>
-    </ul>
-  </nav>
-  <nav class="hide-on-large only trigger z-depth-1"><a aria-label="Toggle visibility of the mobile navbar" href="#" data-activates="slide-out" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
-    <div class="name-title"><a id="name" aria-label="Navigate to the beginning of the page" href="#main" class="teal-text">Anoop Singh</a><span class="brown-text light">Full Stack Developer</span></div>
-  </nav>
-  <nav class="hide-on-large only">
-    <ul id="slide-out" class="side-nav">
-      <li class="bold"><a aria-label="Navigate to the About section" href="#about" class="waves-effect waves-dark teal-text"><i class="mdi-social-person small"></i><span>About</span></a></li>
-      <li class="bold"><a aria-label="Navigate to the Experience section" href="#experience" class="waves-effect waves-dark cyan-text"><i class="mdi-action-trending-up small"></i><span>Experience</span></a></li>
-      <li class="bold"><a aria-label="Navigate to the Projects section" href="#projects" class="waves-effect waves-dark indigo-text"><i class="mdi-av-web small"></i><span>Projects</span></a></li>
-      <li class="bold"><a aria-label="Navigate to the Skills section" href="#skills" class="waves-effect waves-dark purple-text"><i class="mdi-av-equalizer small"></i><span>Skills</span></a></li>
-      <!-- <li class="bold"><a aria-label="Navigate to the Awards section" href="#awards" class="waves-effect waves-dark red-text"><i class="mdi-action-grade small"></i><span>Awards</span></a></li> -->
-      <li class="bold"><a aria-label="Navigate to the Education section" href="#education" class="waves-effect waves-dark orange-text"><i class="mdi-social-school small"></i><span>Education</span></a></li>
-      <li class="bold"><a aria-label="Navigate to the Contact section" href="#contact" class="waves-effect waves-dark brown-text"><i class="mdi-content-mail small"></i><span>Contact</span></a></li>
-      <li class="bold"><a aria-label="Open Anoop's blog in a new tab" href="https://medium.com/@anoopsingh" target="_blank" class="waves-effect waves-dark red-text"><i class="mdi-editor-format-bold small"></i><span>Blog</span></a></li>
-      <li class="bold"><a aria-label="Open Anoop's Resume in a new tab" href="https://drive.google.com/file/d/1a8YFG2qoQknEj-npKw6-rCHrs_Xvjh_V/view?usp=sharing" target="_blank" class="waves-effect waves-dark grey-text text-darken-3"><i class="mdi-action-description small"></i><span>Resume</span></a></li>
-    </ul>
-  </nav>
-  <!-- Main Content-->
-  <main>
-    <section id="intro" class="section scrollspy full-height">
-      <div class="overlay"></div>
-      <div class="container">
-        <h2>I want to <span class="teal">make things</span><br>that <span class="underline">make a difference</span>.</h2>
+  <body>
+    <!-- Navigation Menu-->
+    <nav class="hide-on-small-only">
+      <ul class="side-nav fixed section table-of-contents">
+        <li class="logo">
+          <a
+            id="logo-container"
+            aria-label="Navigate to the beginning of the page"
+            href="#intro"
+            class="brand-logo teal-text"
+          >
+            <h1>
+              Anoop Singh<span class="brown-text light"
+                >Full Stack Developer</span
+              >
+            </h1>
+          </a>
+        </li>
+        <li class="bold">
+          <a
+            aria-label="Navigate to the About section"
+            href="#about"
+            class="waves-effect waves-dark teal-text"
+            ><i class="mdi-social-person small"></i><span>About</span></a
+          >
+        </li>
+        <li class="bold">
+          <a
+            aria-label="Navigate to the Experience section"
+            href="#experience"
+            class="waves-effect waves-dark cyan-text"
+            ><i class="mdi-action-trending-up small"></i
+            ><span>Experience</span></a
+          >
+        </li>
+        <li class="bold">
+          <a
+            aria-label="Navigate to the Projects section"
+            href="#projects"
+            class="waves-effect waves-dark indigo-text"
+            ><i class="mdi-av-web small"></i><span>Projects</span></a
+          >
+        </li>
+        <li class="bold">
+          <a
+            aria-label="Navigate to the Skills section"
+            href="#skills"
+            class="waves-effect waves-dark purple-text"
+            ><i class="mdi-av-equalizer small"></i><span>Skills</span></a
+          >
+        </li>
+        <li class="bold">
+          <a
+            aria-label="Navigate to the Awards section"
+            href="#awards"
+            class="waves-effect waves-dark red-text"
+            ><i class="mdi-action-grade small"></i><span>Awards</span></a
+          >
+        </li>
+        <li class="bold">
+          <a
+            aria-label="Navigate to the Education section"
+            href="#education"
+            class="waves-effect waves-dark orange-text"
+            ><i class="mdi-social-school small"></i><span>Education</span></a
+          >
+        </li>
+        <li class="bold">
+          <a
+            aria-label="Navigate to the Contact section"
+            href="#contact"
+            class="waves-effect waves-dark brown-text"
+            ><i class="mdi-content-mail small"></i><span>Contact</span></a
+          >
+        </li>
+        <li class="bold">
+          <a
+            aria-label="Open Anoop's blog in a new tab"
+            href="https://medium.com/@anoopsingh"
+            target="_blank"
+            class="waves-effect waves-dark red-text"
+            ><i class="mdi-editor-format-bold small"></i><span>Blog</span></a
+          >
+        </li>
+        <li class="bold">
+          <a
+            aria-label="Open Anoop's resume in a new tab"
+            href="https://drive.google.com/file/d/1a8YFG2qoQknEj-npKw6-rCHrs_Xvjh_V/view?usp=sharing"
+            target="_blank"
+            class="waves-effect waves-dark grey-text text-darken-3"
+            ><i class="mdi-action-description small"></i><span>Resume</span></a
+          >
+        </li>
+      </ul>
+    </nav>
+    <nav class="hide-on-large only trigger z-depth-1">
+      <a
+        aria-label="Toggle visibility of the mobile navbar"
+        href="#"
+        data-activates="slide-out"
+        class="button-collapse"
+        ><i class="mdi-navigation-menu"></i
+      ></a>
+      <div class="name-title">
+        <a
+          id="name"
+          aria-label="Navigate to the beginning of the page"
+          href="#main"
+          class="teal-text"
+          >Anoop Singh</a
+        ><span class="brown-text light">Full Stack Developer</span>
       </div>
-    </section>
-    <section id="about" class="section scrollspy">
-      <h3 class="page-title white-text teal">About</h3>
-      <div class="container flow-text">
-        <blockquote>
-          <h2>Mission-driven full stack developer with a passion for Machine Learning Enthusiast and Open Source Contributer.</h2>
-        </blockquote>
-        <p>I’ve always sought out opportunities and challenges that are meaningful to me. I strive hard to learn something new every day. — I've never stopped engaging my passion to help others and solve problems.</p>
-        <p>As a web developer, I enjoy using my obsessive attention to detail, my unequivocal love for making things, and my mission-driven work ethic to literally change the world. That's why I’m excited to make a big impact at a high growth
-          company.</p>
-        <p><strong>Current Focus</strong>:&nbsp;<a aria-label="Navigate to the Full Stack React Native homepage" href="https://angular.io/">Angular</a>&nbsp;//&nbsp;<a aria-label="Navigate to the Full Stack React homepage" href="https://reactjs.org/">ReactJs</a>&nbsp;//&nbsp;<a
-            aria-label="Navigate to the Full Stack React Native homepage" href="https://facebook.github.io/react-native/">React Native</a>&nbsp;//&nbsp;<a aria-label="Navigate to the article &quot;Scalable CSS&quot;" href="https://www.appliedaicourse.com/">Machine
-            Learning</a></p>
-      </div>
-    </section>
-    <section id="experience" class="section scrollspy">
-      <h3 class="page-title white-text teal">Experience</h3>
-      <div class="container">
-        <div class="card">
-          <div class="card-content">
-            <div class="row">
-              <div class="col s12 m2"><a href="https://www.startupinstitute.com/" target="_blank"><img alt="Startup Institute logo" src="static/img/li.png" class="responsive-img center-block"></a></div>
-              <div class="col s12 m10">
-                <p><span class="card-title"><a href="https://www.thelattice.in/" target="_blank" class="teal-text hoverline">Lattice Innovations</a></span></p>
-              </div>
-            </div>
-            <div class="role brown-text">Software Development Engineer</div>
-            <p><em class="grey-text">Lattice is a Medical Technology. Design Factory. We convert your ideas into readily usable solutions.</em></p>
-            <ul>
-              <!-- <li>Taught an introductory seminar covering HTML, CSS, and primarily Bootstrap, with a one-page website deliverable</li> -->
-              <li>Responsible for creating frontend for various web applications with good UI/UX. These platforms range from Single Page Apps (SPAs) using Angular, VueJs, ReactJs.</li>
-              <li>Built virtual room with audio confrencing with chat using WebRTC and vueJs.</li>
-            </ul>
-          </div>
-          <div class="card-action"><span>Sep 2018 - Present| Delhi, IND</span></div>
+    </nav>
+    <nav class="hide-on-large only">
+      <ul id="slide-out" class="side-nav">
+        <li class="bold">
+          <a
+            aria-label="Navigate to the About section"
+            href="#about"
+            class="waves-effect waves-dark teal-text"
+            ><i class="mdi-social-person small"></i><span>About</span></a
+          >
+        </li>
+        <li class="bold">
+          <a
+            aria-label="Navigate to the Experience section"
+            href="#experience"
+            class="waves-effect waves-dark cyan-text"
+            ><i class="mdi-action-trending-up small"></i
+            ><span>Experience</span></a
+          >
+        </li>
+        <li class="bold">
+          <a
+            aria-label="Navigate to the Projects section"
+            href="#projects"
+            class="waves-effect waves-dark indigo-text"
+            ><i class="mdi-av-web small"></i><span>Projects</span></a
+          >
+        </li>
+        <li class="bold">
+          <a
+            aria-label="Navigate to the Skills section"
+            href="#skills"
+            class="waves-effect waves-dark purple-text"
+            ><i class="mdi-av-equalizer small"></i><span>Skills</span></a
+          >
+        </li>
+        <!-- <li class="bold"><a aria-label="Navigate to the Awards section" href="#awards" class="waves-effect waves-dark red-text"><i class="mdi-action-grade small"></i><span>Awards</span></a></li> -->
+        <li class="bold">
+          <a
+            aria-label="Navigate to the Education section"
+            href="#education"
+            class="waves-effect waves-dark orange-text"
+            ><i class="mdi-social-school small"></i><span>Education</span></a
+          >
+        </li>
+        <li class="bold">
+          <a
+            aria-label="Navigate to the Contact section"
+            href="#contact"
+            class="waves-effect waves-dark brown-text"
+            ><i class="mdi-content-mail small"></i><span>Contact</span></a
+          >
+        </li>
+        <li class="bold">
+          <a
+            aria-label="Open Anoop's blog in a new tab"
+            href="https://medium.com/@anoopsingh"
+            target="_blank"
+            class="waves-effect waves-dark red-text"
+            ><i class="mdi-editor-format-bold small"></i><span>Blog</span></a
+          >
+        </li>
+        <li class="bold">
+          <a
+            aria-label="Open Anoop's Resume in a new tab"
+            href="https://drive.google.com/file/d/1a8YFG2qoQknEj-npKw6-rCHrs_Xvjh_V/view?usp=sharing"
+            target="_blank"
+            class="waves-effect waves-dark grey-text text-darken-3"
+            ><i class="mdi-action-description small"></i><span>Resume</span></a
+          >
+        </li>
+      </ul>
+    </nav>
+    <!-- Main Content-->
+    <main>
+      <section id="intro" class="section scrollspy full-height">
+        <div class="overlay"></div>
+        <div class="container">
+          <h2>
+            I want to <span class="teal">make things</span><br />that
+            <span class="underline">make a difference</span>.
+          </h2>
         </div>
-        <div class="card">
-          <div class="card-content">
-            <div class="row">
-              <div class="col s12 m2"><a href="http://provakil.com" target="_blank"><img alt="Provakil logo" src="static/img/pv.png" class="responsive-img center-block"></a></div>
-              <div class="col s12 m10">
-                <p><span class="card-title"><a href="http://provakil.com" target="_blank" class="teal-text hoverline">Provakil</a></span></p>
-              </div>
-            </div>
-            <div class="role brown-text">Software Development Engineer(Intern)</div>
-            <p><em class="grey-text">Provakil is a leading legal technology company building products to power the practice of legal professionals.</em></p>
-            <h6>Develop Product</h6>
-            <ul>
-              <li>Contribute core features across entire stack.</li>
-              <li>Developed some important module like Dashboard, Notification Filter etc..</li>
-              <li>Fix several UI/UX related issues.</li>
-              <li>Tools: BackboneJS, MarionetteJs, SailsJs, MongoDB //JS, jQuery // Sass // HTML, Bulma, CoffeeScript.</li>
-            </ul>
-          </div>
-          <div class="card-action"><span>June 2018 - Aug 2018 | Noida, IND</span></div>
+      </section>
+      <section id="about" class="section scrollspy">
+        <h3 class="page-title white-text teal">About</h3>
+        <div class="container flow-text">
+          <blockquote>
+            <h2>
+              Mission-driven full stack developer with a passion for Machine
+              Learning Enthusiast and Open Source Contributer.
+            </h2>
+          </blockquote>
+          <p>
+            I’ve always sought out opportunities and challenges that are
+            meaningful to me. I strive hard to learn something new every day. —
+            I've never stopped engaging my passion to help others and solve
+            problems.
+          </p>
+          <p>
+            As a web developer, I enjoy using my obsessive attention to detail,
+            my unequivocal love for making things, and my mission-driven work
+            ethic to literally change the world. That's why I’m excited to make
+            a big impact at a high growth company.
+          </p>
+          <p>
+            <strong>Current Focus</strong>:&nbsp;<a
+              aria-label="Navigate to the Full Stack React Native homepage"
+              href="https://angular.io/"
+              >Angular</a
+            >&nbsp;//&nbsp;<a
+              aria-label="Navigate to the Full Stack React homepage"
+              href="https://reactjs.org/"
+              >ReactJs</a
+            >&nbsp;//&nbsp;<a
+              aria-label="Navigate to the Full Stack React Native homepage"
+              href="https://facebook.github.io/react-native/"
+              >React Native</a
+            >&nbsp;//&nbsp;<a
+              aria-label='Navigate to the article "Scalable CSS"'
+              href="https://www.appliedaicourse.com/"
+              >Machine Learning</a
+            >
+          </p>
         </div>
-      </div>
-    </section>
-    <section id="projects" class="section scrollspy">
-      <h3 class="page-title white-text teal">Projects</h3>
-      <div class="container">
-        <div class="row">
-          <!-- Developer Social Platform-->
-          <div class="col s12 m6 l4">
-            <div class="card medium">
-              <div class="card-image waves-effect waves-block waves-light"><img alt="dev logo" src="static/img/dev.png" class="activator"></div>
-              <div class="card-content"><span class="card-title activator teal-text hoverline">DEVCONNECTOR<i class="mdi-navigation-more-vert right"></i></span>
-                <p>Social network for developers,where developer create portfolio, post any article with like and dislike feature.</p>
+      </section>
+      <section id="experience" class="section scrollspy">
+        <h3 class="page-title white-text teal">Experience</h3>
+        <div class="container">
+          <div class="card">
+            <div class="card-content">
+              <div class="row">
+                <div class="col s12 m2">
+                  <a href="https://www.startupinstitute.com/" target="_blank"
+                    ><img
+                      alt="Startup Institute logo"
+                      src="static/img/li.png"
+                      class="responsive-img center-block"
+                  /></a>
+                </div>
+                <div class="col s12 m10">
+                  <p>
+                    <span class="card-title"
+                      ><a
+                        href="https://www.thelattice.in/"
+                        target="_blank"
+                        class="teal-text hoverline"
+                        >Lattice Innovations</a
+                      ></span
+                    >
+                  </p>
+                </div>
               </div>
-              <div class="card-reveal"><span class="card-title brown-text">Accomplishments<i class="mdi-navigation-close right"></i></span>
-                <ul>
-                  <li>ReactJs, Redux</li>
-                  <li>Bootstrap</li>
-                  <li>NodeJs, MongoDB</li>
-                </ul>
-                <div class="card-action"><a aria-label="Visit live Devconnector" href="https://shrouded-headland-79746.herokuapp.com/" target="_blank" data-position="top" data-tooltip="View Online" class="btn-floating btn-large waves-effect waves-light brown tooltipped"><i
-                      class="fa fa-external-link"></i></a><a aria-label="Visit the GitHub repo for Devconnector" href="https://github.com/anoopsingh1996/DEVCONNECTOR" target="_blank" data-position="top" data-tooltip="View Source" class="btn-floating btn-large waves-effect waves-light brown tooltipped"><i
-                      class="fa fa-github"></i></a></div>
-              </div>
+              <div class="role brown-text">Software Development Engineer</div>
+              <p>
+                <em class="grey-text"
+                  >Lattice is a Medical Technology. Design Factory. We convert
+                  your ideas into readily usable solutions.</em
+                >
+              </p>
+              <ul>
+                <!-- <li>Taught an introductory seminar covering HTML, CSS, and primarily Bootstrap, with a one-page website deliverable</li> -->
+                <li>
+                  Responsible for creating frontend for various web applications
+                  with good UI/UX. These platforms range from Single Page Apps
+                  (SPAs) using Angular, VueJs, ReactJs.
+                </li>
+                <li>
+                  Built virtual room with audio confrencing with chat using
+                  WebRTC and vueJs.
+                </li>
+              </ul>
+            </div>
+            <div class="card-action">
+              <span>Sep 2018 - Present| Delhi, IND</span>
             </div>
           </div>
-          <!-- trello clone-->
-          <div class="col s12 m6 l4">
-            <div class="card medium">
-              <div class="card-image waves-effect waves-block waves-light"><img alt="trello logo" src="static/img/trello.png" class="activator"></div>
-              <div class="card-content"><span class="card-title activator teal-text hoverline">Trello Clone<i class="mdi-navigation-more-vert right"></i></span>
-                <p>Web-based project management application like Trello</p>
+          <div class="card">
+            <div class="card-content">
+              <div class="row">
+                <div class="col s12 m2">
+                  <a href="http://provakil.com" target="_blank"
+                    ><img
+                      alt="Provakil logo"
+                      src="static/img/pv.png"
+                      class="responsive-img center-block"
+                  /></a>
+                </div>
+                <div class="col s12 m10">
+                  <p>
+                    <span class="card-title"
+                      ><a
+                        href="http://provakil.com"
+                        target="_blank"
+                        class="teal-text hoverline"
+                        >Provakil</a
+                      ></span
+                    >
+                  </p>
+                </div>
               </div>
-              <div class="card-reveal"><span class="card-title brown-text">Accomplishments<i class="mdi-navigation-close right"></i></span>
-                <ul>
-                  <li>AngularJs</li>
-                  <li>Materialize Css </li>
-                  <li>HTML, CSS, Javascript</li>
-                </ul>
-                <div class="card-action"><a aria-label="Visit live Trello" href="https://anoopsingh1996.github.io/Lattice_Innovation/" target="_blank" data-position="top" data-tooltip="View Online" class="btn-floating btn-large waves-effect waves-light brown tooltipped"><i
-                      class="fa fa-external-link"></i></a><a aria-label="Visit the GitHub repo for trello project" href="https://github.com/anoopsingh1996/Lattice_Innovation" target="_blank" data-position="top" data-tooltip="View Source" class="btn-floating btn-large waves-effect waves-light brown tooltipped"><i
-                      class="fa fa-github"></i></a></div>
+              <div class="role brown-text">
+                Software Development Engineer(Intern)
               </div>
+              <p>
+                <em class="grey-text"
+                  >Provakil is a leading legal technology company building
+                  products to power the practice of legal professionals.</em
+                >
+              </p>
+              <h6>Develop Product</h6>
+              <ul>
+                <li>Contribute core features across entire stack.</li>
+                <li>
+                  Developed some important module like Dashboard, Notification
+                  Filter etc..
+                </li>
+                <li>Fix several UI/UX related issues.</li>
+                <li>
+                  Tools: BackboneJS, MarionetteJs, SailsJs, MongoDB //JS, jQuery
+                  // Sass // HTML, Bulma, CoffeeScript.
+                </li>
+              </ul>
             </div>
-          </div>
-          <!-- Weather-info-app-->
-          <div class="col s12 m6 l4">
-            <div class="card medium">
-              <div class="card-image waves-effect waves-block waves-light"><img alt="Screenshot of Weather web app" src="static/img/weather.png" class="activator"></div>
-              <div class="card-content"><span class="card-title activator teal-text hoverline">Weather Finder<i class="mdi-navigation-more-vert right"></i></span>
-                <p>Develop a​ ​ weather finder app using openweathermap api.</p>
-              </div>
-              <div class="card-reveal"><span class="card-title brown-text">Accomplishments<i class="mdi-navigation-close right"></i></span>
-                <ul>
-                  <li>openweathermap api</li>
-                  <li>ReactJs, JSX, Bootstrap</li>
-                  <li>HTML, CSS, Javascript</li>
-                </ul>
-                <div class="card-action"><a aria-label="Visit Code Weather Finder" href="https://sharp-curie-f048b5.netlify.com" target="_blank" data-position="top" data-tooltip="View Online" class="btn-floating btn-large waves-effect waves-light brown tooltipped"><i
-                      class="fa fa-external-link"></i></a><a aria-label="Visit the GitHub repo for Code Weather Finder Project" href="https://github.com/anoopsingh1996/Weather-info-app" target="_blank" data-position="top" data-tooltip="View Source"
-                    class="btn-floating btn-large waves-effect waves-light brown tooltipped"><i class="fa fa-github"></i></a></div>
-              </div>
-            </div>
-          </div>
-          <!-- Web Music-->
-          <div class="col s12 m6 l4">
-            <div class="card medium">
-              <div class="card-image waves-effect waves-block waves-light"><img alt="Webmusic logo" src="static/img/webmusic.png" class="activator"></div>
-              <div class="card-content"><span class="card-title activator teal-text hoverline">Web Music<i class="mdi-navigation-more-vert right"></i></span>
-                <p>It is a simple music player,like others online music website.</p>
-              </div>
-              <div class="card-reveal"><span class="card-title brown-text">Accomplishments<i class="mdi-navigation-close right"></i></span>
-                <ul>
-                  <li>HTML, CSS</li>
-                  <li>Javascript, jQuery</li>
-                </ul>
-                <div class="card-action"><a aria-label="Visit live Webmusic" href="https://anoopsingh1996.github.io/webmusic/" target="_blank" data-position="top" data-tooltip="View Online" class="btn-floating btn-large waves-effect waves-light brown tooltipped"><i
-                      class="fa fa-external-link"></i></a><a aria-label="Visit the GitHub repo for Web Music project" href="https://github.com/anoopsingh1996/webmusic" target="_blank" data-position="top" data-tooltip="View Source" class="btn-floating btn-large waves-effect waves-light brown tooltipped"><i
-                      class="fa fa-github"></i></a></div>
-              </div>
-            </div>
-          </div>
-          <!-- Editor panel-->
-          <div class="col s12 m6 l4">
-            <div class="card medium">
-              <div class="card-image waves-effect waves-block waves-light"><img alt="Editor Panel image" src="static/img/news.png" class="activator"></div>
-              <div class="card-content"><span class="card-title activator teal-text hoverline">Editor Panel<i class="mdi-navigation-more-vert right"></i></span>
-                <p>It is simple News Website where user can see Latest News that is update by news company editor.</p>
-              </div>
-              <div class="card-reveal"><span class="card-title brown-text">Accomplishments<i class="mdi-navigation-close right"></i></span>
-                <ul>
-                  <li>Built with php <strong>Back-End</strong></li>
-                  <li>HTML, CSS, Javascript <strong>Front-end</strong></li>
-                  <li>Mysql <strong>Database</strong></li>
-                </ul>
-                <div class="card-action"><a aria-label="Visit Editor Panel  web app" href="https://github.com/anoopsingh1996/news_website_with_adminpanel" target="_blank" data-position="top" data-tooltip="View Online" class="btn-floating btn-large waves-effect waves-light brown tooltipped"><i
-                      class="fa fa-external-link"></i></a><a aria-label="Visit the GitHub repo for Editor Panel project" href="https://github.com/anoopsingh1996/news_website_with_adminpanel" target="_blank" data-position="top" data-tooltip="View Source"
-                    class="btn-floating btn-large waves-effect waves-light brown tooltipped"><i class="fa fa-github"></i></a></div>
-              </div>
-            </div>
-          </div>
-          <!-- Face Recognition-->
-          <div class="col s12 m6 l4">
-            <div class="card medium">
-              <div class="card-image waves-effect waves-block waves-light"><img alt="Face Recognition Systems image" src="static/img/f.png" class="activator"></div>
-              <div class="card-content"><span class="card-title activator teal-text hoverline">Face Recognition<i class="mdi-navigation-more-vert right"></i></span>
-                <p>Face Detection and Recognition Systems. </p>
-              </div>
-              <div class="card-reveal"><span class="card-title brown-text">Accomplishments<i class="mdi-navigation-close right"></i></span>
-                <ul>
-                  <li>Face detection "Haar Cascade Classifier".</li>
-                  <li> Face Recognition using "Local Binary Patterns Histograms".</li>
-                  <li>Python, opencv</li>
-                </ul>
-                <div class="card-action"><a aria-label="Visit project report" href="https://drive.google.com/file/d/19WGAefJNydw8jwmtpTxCPCOnfVi_VRFw/view?usp=sharing" data-position="top" data-tooltip="View Project Report" class="btn-floating btn-large waves-effect waves-light brown tooltipped"><i
-                      class="fa fa-external-link"></i></a><a aria-label="Visit the GitHub repo for Face Recognition  project" href="https://github.com/anoopsingh1996/FaceDetection-and-Recognition-using-BPN" data-position="top" data-tooltip="Source is Public"
-                    class="btn-floating btn-large waves-effect waves-light brown tooltipped"><i class="fa fa-github"></i></a></div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section id="skills" class="section scrollspy">
-      <h3 class="page-title white-text teal">Skills</h3>
-      <div class="container">
-        <div class="card">
-          <div class="card-content">
-            <h4 class="brown-text light">HTML</h4>
-            <div class="row text-center">
-              <div class="col s4 m2"><img alt="" src="static/img/html5.png" class="responsive-img">HTML5</div>
-              <div class="col s4 m2"><img alt="" src="static/img/react.png" class="responsive-img">JSX</div>
-            </div>
-          </div>
-        </div>
-        <div class="card">
-          <div class="card-content">
-            <h4 class="brown-text light">CSS</h4>
-            <div class="row text-center">
-              <div class="col s4 m2"><img alt="" src="static/img/css3.png" class="responsive-img">CSS3</div>
-              <div class="col s4 m2"><img alt="" src="static/img/bulma.png" class="responsive-img">Bulma</div>
-              <div class="col s4 m2"><img alt="" src="static/img/angular.png" class="responsive-img">Angular Material</div>
-              <div class="col s4 m2"><img alt="" src="static/img/bootstrap.png" class="responsive-img">Bootstrap</div>
-              <div class="col s4 m2"><img alt="" src="static/img/vuetify.png" class="responsive-img">Vuetify</div>
-              <div class="col s4 m2"><img alt="" src="static/img/materialize.png" class="responsive-img">Materialize</div>
-            </div>
-          </div>
-        </div>
-        <div class="card">
-          <div class="card-content">
-            <h4 class="brown-text light">Javascript</h4>
-            <div class="row text-center">
-              <div class="col s4 m2"><img alt="" src="static/img/javascript.png" class="responsive-img">Javascript</div>
-              <div class="col s4 m2"><img alt="" src="static/img/jquery.png" class="responsive-img">jQuery</div>
-              <div class="col s4 m2"><img alt="" src="static/img/react.png" class="responsive-img">ReactJs</div>
-              <div class="col s4 m2"><img alt="" src="static/img/angular.png" class="responsive-img">Angular</div>
-              <div class="col s4 m2"><img alt="" src="static/img/vuejs.png" class="responsive-img">VueJs</div>
-            </div>
-          </div>
-        </div>
-        <div class="card">
-          <div class="card-content">
-            <h4 class="brown-text light">Back-End</h4>
-            <div class="row text-center">
-              <div class="col s4 m2"><img alt="" src="static/img/php.png" class="responsive-img">php</div>
-              <div class="col s4 m2"><img alt="" src="static/img/nodejs.png" class="responsive-img">NodeJs</div>
-              <div class="col s4 m2"><img alt="" src="static/img/mysql.jpg" class="responsive-img">MySql</div>
-              <div class="col s4 m2"><img alt="" src="static/img/mongodb.png" class="responsive-img">MongoDB</div>
-            </div>
-          </div>
-        </div>
-        <div class="card">
-          <div class="card-content">
-            <h4 class="brown-text light">Other Programming languages</h4>
-            <div class="row text-center">
-              <div class="col s4 m2"><img alt="" src="static/img/c.png" class="responsive-img">C</div>
-              <div class="col s4 m2"><img alt="" src="static/img/Java.png" class="responsive-img">Java</div>
-              <div class="col s4 m2"><img alt="" src="static/img/python.png" class="responsive-img">Python</div>
+            <div class="card-action">
+              <span>June 2018 - Aug 2018 | Noida, IND</span>
             </div>
           </div>
         </div>
-        <div class="card">
-          <div class="card-content">
-            <h4 class="brown-text light">APP</h4>
-            <div class="row text-center">
-              <div class="col s4 m2"><img alt="" src="static/img/react-native-logo.png" class="responsive-img">React Native</div>
+      </section>
+      <section id="projects" class="section scrollspy">
+        <h3 class="page-title white-text teal">Projects</h3>
+        <div class="container">
+          <div class="row">
+            <!-- BreakOut Game-->
+            <div class="col s12 m6 l4">
+              <div class="card medium">
+                <div class="card-image waves-effect waves-block waves-light">
+                  <img
+                    alt="dev logo"
+                    src="static/img/breakout.png"
+                    class="activator"
+                  />
+                </div>
+                <div class="card-content" style="overflow-y: auto;">
+                  <span class="card-title activator teal-text hoverline"
+                    >BREKOUT!<i class="mdi-navigation-more-vert right"></i
+                  ></span>
+                  <p>
+                    Breakout is an arcade game where a layer of bricks lines the
+                    top third of the screen and the goal is to destroy them all.
+                    A ball moves straight around the screen, bouncing off the
+                    top and two sides of the screen.
+                  </p>
+                </div>
+                <div class="card-reveal">
+                  <span class="card-title brown-text"
+                    >Accomplishments<i class="mdi-navigation-close right"></i
+                  ></span>
+                  <ul>
+                    <li>VanillaJs</li>
+                    <li>HTML,CSS</li>
+                    <li>Canvas</li>
+                  </ul>
+                  <div class="card-action">
+                    <a
+                      aria-label="Visit live Brekout"
+                      href="https://romantic-panini-adb871.netlify.com/"
+                      target="_blank"
+                      data-position="top"
+                      data-tooltip="View Online"
+                      class="btn-floating btn-large waves-effect waves-light brown tooltipped"
+                      ><i class="fa fa-external-link"></i></a
+                    ><a
+                      aria-label="Visit the GitHub repo for Brekout"
+                      href="https://github.com/anoopsingh1996/Breakout-game"
+                      target="_blank"
+                      data-position="top"
+                      data-tooltip="View Source"
+                      class="btn-floating btn-large waves-effect waves-light brown tooltipped"
+                      ><i class="fa fa-github"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
             </div>
-          </div>
-        </div>
-        <div class="card">
-          <div class="card-content">
-            <h4 class="brown-text light">CMS</h4>
-            <div class="row text-center">
-              <div class="col s4 m2"><img alt="" src="static/img/wordpress.png" class="responsive-img">Wordpress</div>
-              <div class="col s4 m2"><img alt="" src="static/img/magento.png" class="responsive-img">Magento</div>
+            <!-- Developer Social Platform-->
+            <div class="col s12 m6 l4">
+              <div class="card medium">
+                <div class="card-image waves-effect waves-block waves-light">
+                  <img
+                    alt="dev logo"
+                    src="static/img/dev.png"
+                    class="activator"
+                  />
+                </div>
+                <div class="card-content" style="overflow-y: auto;">
+                  <span class="card-title activator teal-text hoverline"
+                    >DEVCONNECTOR<i class="mdi-navigation-more-vert right"></i
+                  ></span>
+                  <p>
+                    Social network for developers,where developer create
+                    portfolio, post any article with like and dislike feature.
+                  </p>
+                </div>
+                <div class="card-reveal">
+                  <span class="card-title brown-text"
+                    >Accomplishments<i class="mdi-navigation-close right"></i
+                  ></span>
+                  <ul>
+                    <li>ReactJs, Redux</li>
+                    <li>Bootstrap</li>
+                    <li>NodeJs, MongoDB</li>
+                  </ul>
+                  <div class="card-action">
+                    <a
+                      aria-label="Visit live Devconnector"
+                      href="https://shrouded-headland-79746.herokuapp.com/"
+                      target="_blank"
+                      data-position="top"
+                      data-tooltip="View Online"
+                      class="btn-floating btn-large waves-effect waves-light brown tooltipped"
+                      ><i class="fa fa-external-link"></i></a
+                    ><a
+                      aria-label="Visit the GitHub repo for Devconnector"
+                      href="https://github.com/anoopsingh1996/DEVCONNECTOR"
+                      target="_blank"
+                      data-position="top"
+                      data-tooltip="View Source"
+                      class="btn-floating btn-large waves-effect waves-light brown tooltipped"
+                      ><i class="fa fa-github"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
             </div>
-          </div>
-        </div>
-        <div class="card">
-          <div class="card-content">
-            <h4 class="brown-text light">Other</h4>
-            <div class="row text-center">
-              <div class="col s4 m2"><img alt="" src="static/img/github.png" class="responsive-img">Github</div>
-              <div class="col s4 m2"><img alt="" src="static/img/WebRTC.png" class="responsive-img">WebRTC</div>
-              <div class="col s4 m2"><img alt="" src="static/img/git.jpg" class="responsive-img">Git</div>
+            <!-- trello clone-->
+            <div class="col s12 m6 l4">
+              <div class="card medium">
+                <div class="card-image waves-effect waves-block waves-light">
+                  <img
+                    alt="trello logo"
+                    src="static/img/trello.png"
+                    class="activator"
+                  />
+                </div>
+                <div class="card-content" style="overflow-y: auto;">
+                  <span class="card-title activator teal-text hoverline"
+                    >Trello Clone<i class="mdi-navigation-more-vert right"></i
+                  ></span>
+                  <p>Web-based project management application like Trello</p>
+                </div>
+                <div class="card-reveal">
+                  <span class="card-title brown-text"
+                    >Accomplishments<i class="mdi-navigation-close right"></i
+                  ></span>
+                  <ul>
+                    <li>AngularJs</li>
+                    <li>Materialize Css</li>
+                    <li>HTML, CSS, Javascript</li>
+                  </ul>
+                  <div class="card-action">
+                    <a
+                      aria-label="Visit live Trello"
+                      href="https://anoopsingh1996.github.io/Lattice_Innovation/"
+                      target="_blank"
+                      data-position="top"
+                      data-tooltip="View Online"
+                      class="btn-floating btn-large waves-effect waves-light brown tooltipped"
+                      ><i class="fa fa-external-link"></i></a
+                    ><a
+                      aria-label="Visit the GitHub repo for trello project"
+                      href="https://github.com/anoopsingh1996/Lattice_Innovation"
+                      target="_blank"
+                      data-position="top"
+                      data-tooltip="View Source"
+                      class="btn-floating btn-large waves-effect waves-light brown tooltipped"
+                      ><i class="fa fa-github"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
             </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section id="awards" class="section scrollspy">
-      <h3 class="page-title white-text teal">Awards</h3>
-      <div class="container">
-        <div class="row">
-          <div class="col s12 m6">
-            <div class="card">
-              <div class="card-content">
-                <p><span class="card-title"><a href="http://startupinstitute.com" target="_blank" class="teal-text hoverline">SMART INDIA HACKATHON - 2017</a></span></p>
-                <!-- <p class="brown-text">Startup Institute - Full Time Web Development | April 2017</p> -->
-                <ul>
-                  <li>Participate Smart India Hackathon-2017 under the "Ministry of External Affairs".</li>
-                </ul>
+            <!-- Weather-info-app-->
+            <div class="col s12 m6 l4">
+              <div class="card medium">
+                <div class="card-image waves-effect waves-block waves-light">
+                  <img
+                    alt="Screenshot of Weather web app"
+                    src="static/img/weather.png"
+                    class="activator"
+                  />
+                </div>
+                <div class="card-content" style="overflow-y: auto;">
+                  <span class="card-title activator teal-text hoverline"
+                    >Weather Finder<i class="mdi-navigation-more-vert right"></i
+                  ></span>
+                  <p>
+                    Develop a​ ​ weather finder app using openweathermap api.
+                  </p>
+                </div>
+                <div class="card-reveal">
+                  <span class="card-title brown-text"
+                    >Accomplishments<i class="mdi-navigation-close right"></i
+                  ></span>
+                  <ul>
+                    <li>openweathermap api</li>
+                    <li>ReactJs, JSX, Bootstrap</li>
+                    <li>HTML, CSS, Javascript</li>
+                  </ul>
+                  <div class="card-action">
+                    <a
+                      aria-label="Visit Code Weather Finder"
+                      href="https://sharp-curie-f048b5.netlify.com"
+                      target="_blank"
+                      data-position="top"
+                      data-tooltip="View Online"
+                      class="btn-floating btn-large waves-effect waves-light brown tooltipped"
+                      ><i class="fa fa-external-link"></i></a
+                    ><a
+                      aria-label="Visit the GitHub repo for Code Weather Finder Project"
+                      href="https://github.com/anoopsingh1996/Weather-info-app"
+                      target="_blank"
+                      data-position="top"
+                      data-tooltip="View Source"
+                      class="btn-floating btn-large waves-effect waves-light brown tooltipped"
+                      ><i class="fa fa-github"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Web Music-->
+            <div class="col s12 m6 l4">
+              <div class="card medium">
+                <div class="card-image waves-effect waves-block waves-light">
+                  <img
+                    alt="Webmusic logo"
+                    src="static/img/webmusic.png"
+                    class="activator"
+                  />
+                </div>
+                <div class="card-content" style="overflow-y: auto;">
+                  <span class="card-title activator teal-text hoverline"
+                    >Web Music<i class="mdi-navigation-more-vert right"></i
+                  ></span>
+                  <p>
+                    It is a simple music player,like others online music
+                    website.
+                  </p>
+                </div>
+                <div class="card-reveal">
+                  <span class="card-title brown-text"
+                    >Accomplishments<i class="mdi-navigation-close right"></i
+                  ></span>
+                  <ul>
+                    <li>HTML, CSS</li>
+                    <li>Javascript, jQuery</li>
+                  </ul>
+                  <div class="card-action">
+                    <a
+                      aria-label="Visit live Webmusic"
+                      href="https://anoopsingh1996.github.io/webmusic/"
+                      target="_blank"
+                      data-position="top"
+                      data-tooltip="View Online"
+                      class="btn-floating btn-large waves-effect waves-light brown tooltipped"
+                      ><i class="fa fa-external-link"></i></a
+                    ><a
+                      aria-label="Visit the GitHub repo for Web Music project"
+                      href="https://github.com/anoopsingh1996/webmusic"
+                      target="_blank"
+                      data-position="top"
+                      data-tooltip="View Source"
+                      class="btn-floating btn-large waves-effect waves-light brown tooltipped"
+                      ><i class="fa fa-github"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Editor panel-->
+            <div class="col s12 m6 l4">
+              <div class="card medium">
+                <div class="card-image waves-effect waves-block waves-light">
+                  <img
+                    alt="Editor Panel image"
+                    src="static/img/news.png"
+                    class="activator"
+                  />
+                </div>
+                <div class="card-content" style="overflow-y: auto;">
+                  <span class="card-title activator teal-text hoverline"
+                    >Editor Panel<i class="mdi-navigation-more-vert right"></i
+                  ></span>
+                  <p>
+                    It is simple News Website where user can see Latest News
+                    that is update by news company editor.
+                  </p>
+                </div>
+                <div class="card-reveal">
+                  <span class="card-title brown-text"
+                    >Accomplishments<i class="mdi-navigation-close right"></i
+                  ></span>
+                  <ul>
+                    <li>Built with php <strong>Back-End</strong></li>
+                    <li>HTML, CSS, Javascript <strong>Front-end</strong></li>
+                    <li>Mysql <strong>Database</strong></li>
+                  </ul>
+                  <div class="card-action">
+                    <a
+                      aria-label="Visit Editor Panel  web app"
+                      href="https://github.com/anoopsingh1996/news_website_with_adminpanel"
+                      target="_blank"
+                      data-position="top"
+                      data-tooltip="View Online"
+                      class="btn-floating btn-large waves-effect waves-light brown tooltipped"
+                      ><i class="fa fa-external-link"></i></a
+                    ><a
+                      aria-label="Visit the GitHub repo for Editor Panel project"
+                      href="https://github.com/anoopsingh1996/news_website_with_adminpanel"
+                      target="_blank"
+                      data-position="top"
+                      data-tooltip="View Source"
+                      class="btn-floating btn-large waves-effect waves-light brown tooltipped"
+                      ><i class="fa fa-github"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Face Recognition-->
+            <div class="col s12 m6 l4">
+              <div class="card medium">
+                <div class="card-image waves-effect waves-block waves-light">
+                  <img
+                    alt="Face Recognition Systems image"
+                    src="static/img/f.png"
+                    class="activator"
+                  />
+                </div>
+                <div class="card-content" style="overflow-y: auto;">
+                  <span class="card-title activator teal-text hoverline"
+                    >Face Recognition<i
+                      class="mdi-navigation-more-vert right"
+                    ></i
+                  ></span>
+                  <p>Face Detection and Recognition Systems.</p>
+                </div>
+                <div class="card-reveal">
+                  <span class="card-title brown-text"
+                    >Accomplishments<i class="mdi-navigation-close right"></i
+                  ></span>
+                  <ul>
+                    <li>Face detection "Haar Cascade Classifier".</li>
+                    <li>
+                      Face Recognition using "Local Binary Patterns Histograms".
+                    </li>
+                    <li>Python, opencv</li>
+                  </ul>
+                  <div class="card-action">
+                    <a
+                      aria-label="Visit project report"
+                      href="https://drive.google.com/file/d/19WGAefJNydw8jwmtpTxCPCOnfVi_VRFw/view?usp=sharing"
+                      data-position="top"
+                      data-tooltip="View Project Report"
+                      class="btn-floating btn-large waves-effect waves-light brown tooltipped"
+                      ><i class="fa fa-external-link"></i></a
+                    ><a
+                      aria-label="Visit the GitHub repo for Face Recognition  project"
+                      href="https://github.com/anoopsingh1996/FaceDetection-and-Recognition-using-BPN"
+                      data-position="top"
+                      data-tooltip="Source is Public"
+                      class="btn-floating btn-large waves-effect waves-light brown tooltipped"
+                      ><i class="fa fa-github"></i
+                    ></a>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
-          <!-- <div class="col s12 m6">
+        </div>
+      </section>
+      <section id="skills" class="section scrollspy">
+        <h3 class="page-title white-text teal">Skills</h3>
+        <div class="container">
+          <div class="card">
+            <div class="card-content">
+              <h4 class="brown-text light">HTML</h4>
+              <div class="row text-center">
+                <div class="col s4 m2">
+                  <img
+                    alt=""
+                    src="static/img/html5.png"
+                    class="responsive-img"
+                  />HTML5
+                </div>
+                <div class="col s4 m2">
+                  <img
+                    alt=""
+                    src="static/img/react.png"
+                    class="responsive-img"
+                  />JSX
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-content">
+              <h4 class="brown-text light">CSS</h4>
+              <div class="row text-center">
+                <div class="col s4 m2">
+                  <img
+                    alt=""
+                    src="static/img/css3.png"
+                    class="responsive-img"
+                  />CSS3
+                </div>
+                <div class="col s4 m2">
+                  <img
+                    alt=""
+                    src="static/img/bulma.png"
+                    class="responsive-img"
+                  />Bulma
+                </div>
+                <div class="col s4 m2">
+                  <img
+                    alt=""
+                    src="static/img/angular.png"
+                    class="responsive-img"
+                  />Angular Material
+                </div>
+                <div class="col s4 m2">
+                  <img
+                    alt=""
+                    src="static/img/bootstrap.png"
+                    class="responsive-img"
+                  />Bootstrap
+                </div>
+                <div class="col s4 m2">
+                  <img
+                    alt=""
+                    src="static/img/vuetify.png"
+                    class="responsive-img"
+                  />Vuetify
+                </div>
+                <div class="col s4 m2">
+                  <img
+                    alt=""
+                    src="static/img/materialize.png"
+                    class="responsive-img"
+                  />Materialize
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-content">
+              <h4 class="brown-text light">Javascript</h4>
+              <div class="row text-center">
+                <div class="col s4 m2">
+                  <img
+                    alt=""
+                    src="static/img/javascript.png"
+                    class="responsive-img"
+                  />Javascript
+                </div>
+                <div class="col s4 m2">
+                  <img
+                    alt=""
+                    src="static/img/jquery.png"
+                    class="responsive-img"
+                  />jQuery
+                </div>
+                <div class="col s4 m2">
+                  <img
+                    alt=""
+                    src="static/img/react.png"
+                    class="responsive-img"
+                  />ReactJs
+                </div>
+                <div class="col s4 m2">
+                  <img
+                    alt=""
+                    src="static/img/angular.png"
+                    class="responsive-img"
+                  />Angular
+                </div>
+                <div class="col s4 m2">
+                  <img
+                    alt=""
+                    src="static/img/vuejs.png"
+                    class="responsive-img"
+                  />VueJs
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-content">
+              <h4 class="brown-text light">Back-End</h4>
+              <div class="row text-center">
+                <div class="col s4 m2">
+                  <img
+                    alt=""
+                    src="static/img/php.png"
+                    class="responsive-img"
+                  />php
+                </div>
+                <div class="col s4 m2">
+                  <img
+                    alt=""
+                    src="static/img/nodejs.png"
+                    class="responsive-img"
+                  />NodeJs
+                </div>
+                <div class="col s4 m2">
+                  <img
+                    alt=""
+                    src="static/img/mysql.jpg"
+                    class="responsive-img"
+                  />MySql
+                </div>
+                <div class="col s4 m2">
+                  <img
+                    alt=""
+                    src="static/img/mongodb.png"
+                    class="responsive-img"
+                  />MongoDB
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-content">
+              <h4 class="brown-text light">Other Programming languages</h4>
+              <div class="row text-center">
+                <div class="col s4 m2">
+                  <img alt="" src="static/img/c.png" class="responsive-img" />C
+                </div>
+                <div class="col s4 m2">
+                  <img
+                    alt=""
+                    src="static/img/Java.png"
+                    class="responsive-img"
+                  />Java
+                </div>
+                <div class="col s4 m2">
+                  <img
+                    alt=""
+                    src="static/img/python.png"
+                    class="responsive-img"
+                  />Python
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-content">
+              <h4 class="brown-text light">APP</h4>
+              <div class="row text-center">
+                <div class="col s4 m2">
+                  <img
+                    alt=""
+                    src="static/img/react-native-logo.png"
+                    class="responsive-img"
+                  />React Native
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-content">
+              <h4 class="brown-text light">CMS</h4>
+              <div class="row text-center">
+                <div class="col s4 m2">
+                  <img
+                    alt=""
+                    src="static/img/wordpress.png"
+                    class="responsive-img"
+                  />Wordpress
+                </div>
+                <div class="col s4 m2">
+                  <img
+                    alt=""
+                    src="static/img/magento.png"
+                    class="responsive-img"
+                  />Magento
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-content">
+              <h4 class="brown-text light">Other</h4>
+              <div class="row text-center">
+                <div class="col s4 m2">
+                  <img
+                    alt=""
+                    src="static/img/github.png"
+                    class="responsive-img"
+                  />Github
+                </div>
+                <div class="col s4 m2">
+                  <img
+                    alt=""
+                    src="static/img/WebRTC.png"
+                    class="responsive-img"
+                  />WebRTC
+                </div>
+                <div class="col s4 m2">
+                  <img
+                    alt=""
+                    src="static/img/git.jpg"
+                    class="responsive-img"
+                  />Git
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="awards" class="section scrollspy">
+        <h3 class="page-title white-text teal">Awards</h3>
+        <div class="container">
+          <div class="row">
+            <div class="col s12 m6">
+              <div class="card">
+                <div class="card-content">
+                  <p>
+                    <span class="card-title"
+                      ><a
+                        href="http://startupinstitute.com"
+                        target="_blank"
+                        class="teal-text hoverline"
+                        >SMART INDIA HACKATHON - 2017</a
+                      ></span
+                    >
+                  </p>
+                  <!-- <p class="brown-text">Startup Institute - Full Time Web Development | April 2017</p> -->
+                  <ul>
+                    <li>
+                      Participate Smart India Hackathon-2017 under the "Ministry
+                      of External Affairs".
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <!-- <div class="col s12 m6">
             <div class="card">
               <div class="card-content">
                 <p><span class="card-title"><a href="https://wespire.com" target="_blank" class="teal-text hoverline">Inspired By You Award</a></span></p>
@@ -399,151 +1126,219 @@
               </div>
             </div>
           </div> -->
+          </div>
         </div>
-      </div>
-    </section>
-    <section id="education" class="section scrollspy">
-      <h3 class="page-title white-text teal">Education</h3>
-      <div class="container">
-        <div class="row">
-          <div class="col s12 m6">
-            <div class="card">
-              <div class="card-content">
-                <p><span class="card-title"><a href="https://www.smvdu.ac.in/" class="teal-text hoverline">Shri Mata Vaishno Devi University</a></span></p>
-                <p class="brown-text">J&K, INDIA</p>
-                <ul>
-                  <li>B.Tech in Computer Science and Engineering</li>
-                  <li>Undergraduate</li>
-                </ul>
+      </section>
+      <section id="education" class="section scrollspy">
+        <h3 class="page-title white-text teal">Education</h3>
+        <div class="container">
+          <div class="row">
+            <div class="col s12 m6">
+              <div class="card">
+                <div class="card-content">
+                  <p>
+                    <span class="card-title"
+                      ><a
+                        href="https://www.smvdu.ac.in/"
+                        class="teal-text hoverline"
+                        >Shri Mata Vaishno Devi University</a
+                      ></span
+                    >
+                  </p>
+                  <p class="brown-text">J&K, INDIA</p>
+                  <ul>
+                    <li>B.Tech in Computer Science and Engineering</li>
+                    <li>Undergraduate</li>
+                  </ul>
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
-    <section id="contact" class="section scrollspy full-height">
-      <h3 class="page-title white-text teal">Contact</h3>
-      <div class="container row">
-        <div class="col s7">
-          <p><a aria-label="Email Anoop" href="mailto:anoopraghuvansi@gmail.com" data-position="top" data-tooltip="Email Anoop" class="btn-floating btn-large waves-effect waves-light brown tooltipped"><i class="fa fa-envelope"></i><a alt="" href="mailto:anoopraghuvansi@gmail.com"
-                class="hoverline">anoopraghuvansi@gmail.com</a></a></p>
-          <p><a aria-label="View Anoop on GitHub" href="http://github.com/anoopsingh1996" target="_blank" data-position="top" data-tooltip="View Anoop on GitHub" class="btn-floating btn-large waves-effect waves-light brown tooltipped"><i class="fa fa-github"></i><a
-                alt="" href="http://github.com/anoopsingh1996" class="hoverline">github.com/anoopsingh1996</a></a></p>
-          <p><a aria-label="View Anoop on LinkedIn" href="http://linkedin.com/in/anoopsingh1996" target="_blank" data-position="top" data-tooltip="View Anoop on LinkedIn" class="btn-floating btn-large waves-effect waves-light brown tooltipped"><i
-                class="fa fa-linkedin"></i><a alt="" href="http://linkedin.com/in/anoopsingh1996" class="hoverline">linkedin.com/in/anoopsingh1996</a></a></p>
-          <p><a aria-label="View Anoop on Twitter" href="https://twitter.com/anoopraghuvansi" target="_blank" data-position="top" data-tooltip="View Anoop on Twitter" class="btn-floating btn-large waves-effect waves-light brown tooltipped"><i class="fa fa-twitter"></i><a
-                alt="" href="https://twitter.com/anoopraghuvansi" class="hoverline">@anoopraghuvansi</a></a></p>
+      </section>
+      <section id="contact" class="section scrollspy full-height">
+        <h3 class="page-title white-text teal">Contact</h3>
+        <div class="container row">
+          <div class="col s7">
+            <p>
+              <a
+                aria-label="Email Anoop"
+                href="mailto:anoopraghuvansi@gmail.com"
+                data-position="top"
+                data-tooltip="Email Anoop"
+                class="btn-floating btn-large waves-effect waves-light brown tooltipped"
+                ><i class="fa fa-envelope"></i
+                ><a
+                  alt=""
+                  href="mailto:anoopraghuvansi@gmail.com"
+                  class="hoverline"
+                  >anoopraghuvansi@gmail.com</a
+                ></a
+              >
+            </p>
+            <p>
+              <a
+                aria-label="View Anoop on GitHub"
+                href="http://github.com/anoopsingh1996"
+                target="_blank"
+                data-position="top"
+                data-tooltip="View Anoop on GitHub"
+                class="btn-floating btn-large waves-effect waves-light brown tooltipped"
+                ><i class="fa fa-github"></i
+                ><a
+                  alt=""
+                  href="http://github.com/anoopsingh1996"
+                  class="hoverline"
+                  >github.com/anoopsingh1996</a
+                ></a
+              >
+            </p>
+            <p>
+              <a
+                aria-label="View Anoop on LinkedIn"
+                href="http://linkedin.com/in/anoopsingh1996"
+                target="_blank"
+                data-position="top"
+                data-tooltip="View Anoop on LinkedIn"
+                class="btn-floating btn-large waves-effect waves-light brown tooltipped"
+                ><i class="fa fa-linkedin"></i
+                ><a
+                  alt=""
+                  href="http://linkedin.com/in/anoopsingh1996"
+                  class="hoverline"
+                  >linkedin.com/in/anoopsingh1996</a
+                ></a
+              >
+            </p>
+            <p>
+              <a
+                aria-label="View Anoop on Twitter"
+                href="https://twitter.com/anoopraghuvansi"
+                target="_blank"
+                data-position="top"
+                data-tooltip="View Anoop on Twitter"
+                class="btn-floating btn-large waves-effect waves-light brown tooltipped"
+                ><i class="fa fa-twitter"></i
+                ><a
+                  alt=""
+                  href="https://twitter.com/anoopraghuvansi"
+                  class="hoverline"
+                  >@anoopraghuvansi</a
+                ></a
+              >
+            </p>
+          </div>
         </div>
-      </div>
-    </section>
-  </main>
-  <div class="preloader-background">
-    <div class="preloader-wrapper big active">
-      <div class="spinner-layer spinner-blue">
-        <div class="circle-clipper left">
-          <div class="circle"></div>
+      </section>
+    </main>
+    <div class="preloader-background">
+      <div class="preloader-wrapper big active">
+        <div class="spinner-layer spinner-blue">
+          <div class="circle-clipper left">
+            <div class="circle"></div>
+          </div>
+          <div class="gap-patch">
+            <div class="circle"></div>
+          </div>
+          <div class="circle-clipper right">
+            <div class="circle"></div>
+          </div>
         </div>
-        <div class="gap-patch">
-          <div class="circle"></div>
-        </div>
-        <div class="circle-clipper right">
-          <div class="circle"></div>
-        </div>
-      </div>
 
-      <div class="spinner-layer spinner-red">
-        <div class="circle-clipper left">
-          <div class="circle"></div>
+        <div class="spinner-layer spinner-red">
+          <div class="circle-clipper left">
+            <div class="circle"></div>
+          </div>
+          <div class="gap-patch">
+            <div class="circle"></div>
+          </div>
+          <div class="circle-clipper right">
+            <div class="circle"></div>
+          </div>
         </div>
-        <div class="gap-patch">
-          <div class="circle"></div>
-        </div>
-        <div class="circle-clipper right">
-          <div class="circle"></div>
-        </div>
-      </div>
 
-      <div class="spinner-layer spinner-yellow">
-        <div class="circle-clipper left">
-          <div class="circle"></div>
+        <div class="spinner-layer spinner-yellow">
+          <div class="circle-clipper left">
+            <div class="circle"></div>
+          </div>
+          <div class="gap-patch">
+            <div class="circle"></div>
+          </div>
+          <div class="circle-clipper right">
+            <div class="circle"></div>
+          </div>
         </div>
-        <div class="gap-patch">
-          <div class="circle"></div>
-        </div>
-        <div class="circle-clipper right">
-          <div class="circle"></div>
-        </div>
-      </div>
 
-      <div class="spinner-layer spinner-green">
-        <div class="circle-clipper left">
-          <div class="circle"></div>
-        </div>
-        <div class="gap-patch">
-          <div class="circle"></div>
-        </div>
-        <div class="circle-clipper right">
-          <div class="circle"></div>
+        <div class="spinner-layer spinner-green">
+          <div class="circle-clipper left">
+            <div class="circle"></div>
+          </div>
+          <div class="gap-patch">
+            <div class="circle"></div>
+          </div>
+          <div class="circle-clipper right">
+            <div class="circle"></div>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-  <!-- jQuery-->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-  <!-- Materialize - Compiled and minified JavaScript-->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.95.3/js/materialize.min.js"></script>
-  <script>
-    // Materialize - Initializers
-    $(document).ready(function() {
-      $('.scrollspy').scrollSpy();
-      // Initialize collapse button
-      $(".button-collapse").sideNav({
-        menuWidth: 190, // Default is 240
-        edge: 'left', // Choose the horizontal origin
-        closeOnClick: true // Closes side-nav on <a> clicks, useful for Angular/Meteor
+    <!-- jQuery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <!-- Materialize - Compiled and minified JavaScript-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.95.3/js/materialize.min.js"></script>
+    <script>
+      // Materialize - Initializers
+      $(document).ready(function() {
+        $('.scrollspy').scrollSpy();
+        // Initialize collapse button
+        $('.button-collapse').sideNav({
+          menuWidth: 190, // Default is 240
+          edge: 'left', // Choose the horizontal origin
+          closeOnClick: true // Closes side-nav on <a> clicks, useful for Angular/Meteor
+        });
       });
-    });
-    document.addEventListener("DOMContentLoaded", function() {
-      $('.preloader-background').delay(1700).fadeOut('slow');
+      document.addEventListener('DOMContentLoaded', function() {
+        $('.preloader-background')
+          .delay(1700)
+          .fadeOut('slow');
 
-      $('.preloader-wrapper')
-        .delay(2000)
-        .fadeOut();
-    });
-  </script>
-  <style>
-    .preloader-background {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      background-color: #eee;
-      position: fixed;
-      z-index: 999;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
+        $('.preloader-wrapper')
+          .delay(2000)
+          .fadeOut();
+      });
+    </script>
+    <style>
+      .preloader-background {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #eee;
+        position: fixed;
+        z-index: 999;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
 
-      p {
-        padding-top: 120px;
-        margin-left: -60px;
-        opacity: 0.8;
+        p {
+          padding-top: 120px;
+          margin-left: -60px;
+          opacity: 0.8;
+        }
       }
-    }
 
-    // ADD BLINKING TEXT CLASS
-    .blinking {
-      animation: blinker 0.5s linear infinite;
-    }
-
-    @keyframes blinker {
-      50% {
-        opacity: 0;
+      // ADD BLINKING TEXT CLASS
+      .blinking {
+        animation: blinker 0.5s linear infinite;
       }
-    }
-  </style>
-  <!-- Anoop Singh--><small>
-  </small>
-</body>
 
+      @keyframes blinker {
+        50% {
+          opacity: 0;
+        }
+      }
+    </style>
+    <!-- Anoop Singh--><small
+    > </small>
+  </body>
 </html>
